@@ -245,6 +245,11 @@ footer {
 	text-align: left;
 }
 
+.visit-me a {
+	text-decoration: none;
+	color: white;
+}
+
 .media-item img:hover {
 	width: 420px;
 	height: 220px;
