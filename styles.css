@@ -1,0 +1,390 @@
+﻿body {
+	background-image: radial-gradient(silver, #404040);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	font-family: 'Source Code pro';
+	color: black;
+	font-size: 1rem;
+}
+
+p {
+	text-indent: 20px;
+}
+
+a:active {
+	color: red;
+}
+
+section {
+	margin: 26vh;
+}
+
+header {
+	color: black;
+	margin: 26vh 0;
+	font-size: 2rem;
+	align-self: center;
+}
+
+.content {
+	flex: 1;
+}
+
+nav {
+	top: 0;
+	position: fixed;
+	text-align: center;
+}
+
+.navbar {
+	position: fixed;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	list-style: none;
+	padding: 12px 32px;
+}
+
+.navbar li a {
+	text-decoration: none;
+	color: mintcream;
+	text-shadow: 2px -2px 0px black;
+}
+
+nav li a:hover {
+	color: silver;
+	text-shadow: 2px -2px 0px black;
+}
+
+.game-text {
+	color: mintcream;
+	text-shadow: 2px -2px 0px black;
+}
+
+#about {
+	margin: 0rem 3rem;
+}
+
+.about-container {
+	display: flex;
+}
+
+.about-text {
+	text-align: left;
+	padding: 5%;
+	width: 60%;
+}
+
+
+.portrait {
+	align-self: center;
+}
+
+.portrait img {
+	height: 300px;
+	width: 300px;
+	border-radius: 32px;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	transition: transform 0.6s;
+}
+
+.footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	transition: transform 0.6s;
+}
+
+.footer li {
+	list-style: none;
+	color: mintcream;
+	text-shadow: 2px -2px 0px black;
+}
+
+.copyright-text {
+	margin-bottom: 6rem;
+	font-size: .8rem;
+	color: mintcream;
+	text-align: center;
+}
+
+#home {
+	text-align: center;
+	padding: 1.4rem 0rem;
+}
+
+#home span {
+	font-size: 1.4rem;
+}
+
+#projects {
+	margin: 8vh auto;
+	text-align: center;
+	color: black;
+}
+
+#projects-content {
+	margin: 16rem 0rem;
+	display: flex;
+}
+
+.hover-game-info {
+	font-style: italic;
+	text-align: center;
+}
+
+.file-content {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10rem;
+	align-items: center;
+}
+
+.file-content button {
+	background-color: rgba(0, 0, 0, 0);
+	align-self: center;
+	margin: 16px;
+	padding: 16px 16px;
+	width: 128px;
+	box-shadow: 1px -1px 0px black;
+	transition: .2s ease-in;
+	border-radius: 4px;
+	border-color: mintcream;
+	transition: .2s ease-in;
+}
+
+.file-content button:hover {
+	color: mintcream;
+	box-shadow: 1px -1px 0px black;
+	transition: .2s ease-out;
+}
+
+.email-button img {
+	width: 42px;
+	height: 42px;
+}
+
+#connect {
+	margin: 128px 0px;
+}
+
+#connect h1 {
+	margin: 32px 0px;
+	flex-direction: row;
+	align-content: center;
+	text-align: center;
+}
+
+.skill-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	border: 2px ridge black;
+}
+
+.skill-logo img {
+	margin: 1rem 3rem;
+	height: 64px;
+	width: 64px;
+}
+
+#connect p {
+	margin: 1rem 0rem;
+	text-align: center;
+	font-style: italic;
+}
+
+.social-media {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 32px 0px;
+}
+
+.social-media-item {
+	display: inline-block;
+}
+
+.social-media-item img {
+	border-radius: 8px;
+	height: 42px;
+	width: 42px;
+	margin: 0px 32px;
+}
+
+.media-wrapper {
+	justify-content: space-around;
+	flex-direction: column;
+	align-items: center;
+}
+
+.media-item {
+	min-width: 512px;
+	gap: 32px;
+	margin-left: 32px;
+}
+
+.media-item img {
+	width: 240px;
+	height: 135px;
+	transition: .4s ease-out;
+}
+
+#media-description {
+	font-family: 'Source Code Pro';
+	color: black;
+	margin: 0px 64px 0px 0px;
+	text-align: left;
+}
+
+.media-item img:hover {
+	width: 420px;
+	height: 220px;
+	border: 1px dotted mintcream;
+	transition: .2s ease-in;
+}
+
+.floating-numbers-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	pointer-events: none;
+	z-index: -1;
+	overflow: hidden;
+}
+
+.floating-number {
+	position: absolute;
+	display: block;
+	pointer-events: none;
+}
+
+.floating-number {
+	position: absolute;
+	font-size: 18px;
+	color: black;
+	font-style: bold;
+	animation: floatingAnimation linear infinite;
+}
+
+#glitch-text {
+	font-family: 'Source Code Pro';
+}
+
+.rotate-text {
+	position: relative;
+	text-transform: inherit;
+	transform-origin: center;
+	display: inline-block;
+	color: black;
+	z-index: -1;
+	animation-fill-mode: forwards;
+	animation: rotateAnimation 8s ease-in infinite;
+}
+
+::-webkit-scrollbar {
+	width: 1rem;
+	border: thin;
+	background-image: radial-gradient(#404040, black);
+}
+
+::-webkit-scrollbar-thumb {
+	background-image: url(Images/bar.png);
+	background-position: center;
+	background-size: cover;
+	border-radius: 6px;
+	border-color: red;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: black;
+}
+
+@keyframes floatingAnimation {
+	0% {
+		transform: translate(0, 0) scale(1);
+		opacity: 1;
+	}
+	50% {
+		transform: translate(10px, 10px) scale(1.2);
+		opacity: 0.8;
+	}
+	100% {
+		transform: translate(0, 0) scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes scaleText {
+	0% {
+		font-size: 16px;
+	}
+	50% {
+		font-size: 32px;
+	}
+	100% {
+		font-size: 16px;
+	}
+}
+
+@keyframes rotateAnimation {
+	0% {
+		transform: rotate(0deg);
+	}
+	40% {
+		transform: rotate(-90deg);
+	}
+	60% {
+		transform: rotate(90deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+@keyframes rotateAnimationSmall {
+	0% {
+		transform: rotate(0deg);
+	}
+	40% {
+		transform: rotate(-5deg);
+	}
+	60% {
+		transform: rotate(5deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+@keyframes borderAnimation {
+	0% {
+		border-width: 1px;
+	}
+	50% {
+		border-width: 5px;
+	}
+	100% {
+		border-width: 1px;
+	}
+}
+
+@keyframes skewAnimation {
+	from {
+		transform: skewX(0deg);
+	}
+
+	to {
+		transform: skewX(1deg);
+	}
+}
