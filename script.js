@@ -1,4 +1,5 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
+
     function toggleFooter() {
         var footer = document.querySelector('.footer');
         if (window.scrollY === 0 || window.innerHeight + window.scrollY >= document.body.offsetHeight) {
