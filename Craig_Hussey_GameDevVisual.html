@@ -20,6 +20,8 @@
     <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
 </head>
 <body>
+    <div class="datatitle"><p><h2>Game Devolopment skill ball</h2></p></div>
+
     <div id="mynetwork"></div>
 
     <script type="text/javascript">
@@ -38,7 +40,7 @@
             { id: 12, label: 'Storytelling', group: 'Skill', shape: 'ellipse' },
             { id: 13, label: 'Creativity', group: 'Skill', shape: 'ellipse' },
             { id: 14, label: 'Software Engineering', group: 'Skill', shape: 'ellipse' },
-            { id: 15, label: '3D Modeling and Animation', group: 'Skill', shape: 'ellipse' }
+            { id: 15, label: '3D Modeling', group: 'Skill', shape: 'ellipse' }
         ];
 
         var edges = [
@@ -70,7 +72,10 @@
             { from: 8, to: 4, value: 0.2 },
             { from: 8, to: 15, value: 0.2 },
             { from: 8, to: 14, value: 0.2 },
-            { from: 8, to: 6, value: 0.2 }
+            { from: 8, to: 6, value: 0.2 },
+            { from: 12, to: 13, value: 0.3 },
+            { from: 12, to: 2, value: 0.2 },
+            { from: 12, to: 9, value: 0.2 }
         ];
 
         var container = document.getElementById('mynetwork');
