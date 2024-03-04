@@ -1,20 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-
-    function toggleFooter() {
-        var footer = document.querySelector('.footer');
-        if (window.scrollY === 0 || window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-          footer.style.transform = 'translateY(0)';
-        } else {
-          footer.style.transform = 'translateY(200%)';
-        }
-      }
-    
-      window.addEventListener('scroll', toggleFooter);
-    
-      toggleFooter();
-
-    window.addEventListener('scroll', toggleFooter);
-
     function createFloatingNumber() {
       const characters = "0123456789!@#$%^&*()-_=+[]{};:,.<>/?~darcproducts";
       const number = document.createElement('span');
