@@ -69,11 +69,6 @@ nav li a:hover {
 	text-shadow: 2px -2px 0px black;
 }
 
-.datatitle {
-	position: absolute;
-	color: white;
-}
-
 #home {
 	margin-top: 30vh;
 	text-align: center;
@@ -94,7 +89,7 @@ nav li a:hover {
 
 .projects h3 {
 	color: white;
-	
+	text-align: center;
 }
 
 .floating-numbers-container {
