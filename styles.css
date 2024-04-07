@@ -105,14 +105,8 @@ nav li a:hover {
 
 .floating-number {
 	position: absolute;
-	display: block;
-	pointer-events: none;
-}
-
-.floating-number {
-	position: absolute;
-	font-size: 2rem;
-	color: black;
+	font-size: 1rem;
+	color: darkgrey;
 	animation: floatingAnimation linear infinite;
 }
 
